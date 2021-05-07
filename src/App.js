@@ -1,23 +1,55 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from "react"; 
 
-function App() {
+// import { CSSTransition } from 'react-transition-group'; 
+
+import SearchBar from "./components/SearchBar"; 
+import Nominations from "./components/Nominations"; 
+import SearchResults from "./components/SearchResults"; 
+
+const App = () => {
+
+  const API_KEY = process.env.REACT_APP_OMDB_KEY; 
+
+  const [results, setResults] = useState([]); 
+  const [noms, setNoms] = useState([]); 
+  const [banner, setBanner] = useState(false); 
+
+  async function loadResults(term) {
+    await fetch(`http://www.omdbapi.com/?s=${term}&apikey=${API_KEY}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.Search) {
+        let resultList = []; 
+        data.Search.forEach(item => {
+           const title = item.Title; 
+           const year = item.Year; 
+           const entry = `${title} (${year})`; 
+           resultList.push(entry); 
+        })
+        setResults([...resultList]); 
+      } else {
+        setResults([]); 
+      }
+    })
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      {banner && 
+        <div class="warning-banner">
+        <p>{banner ? "You've already got five nominees!" : ""}</p>
+      </div>
+      }
+        <SearchBar loadResults={loadResults} />
+
+      <div className="results-nominations">
+        <SearchResults results={results} setNoms={setNoms} noms={noms} setBanner={setBanner}
+          />
+        <Nominations noms={noms}  setNoms={setNoms} setBanner={setBanner} />
+      </div>
     </div>
   );
 }
