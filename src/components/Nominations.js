@@ -16,7 +16,7 @@ const Nominations = (props) => {
       return (
         <li key={idx}>
           {nom}
-          <button onClick={() => handleDelete(nom)}>Delete Nomination</button>
+          <button onClick={() => handleDelete(nom)}>Delete</button>
         </li>
       )
     })
