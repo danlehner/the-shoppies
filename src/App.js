@@ -16,7 +16,7 @@ const App = () => {
   const [banner, setBanner] = useState(false); 
 
   async function loadResults(term) {
-    await fetch(`http://www.omdbapi.com/?s=${term}&apikey=${API_KEY}`)
+    await fetch(`https://www.omdbapi.com/?s=${term}&apikey=${API_KEY}`)
     .then(res => res.json())
     .then(data => {
       if (data.Search) {
@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <div className="App">
-      
+
       {banner && 
         <div class="warning-banner">
         <p>{banner ? "You've already got five nominees!" : ""}</p>
