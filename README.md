@@ -13,3 +13,7 @@ Here's a simple UI that utilizes the [OMDB API](http://www.omdbapi.com/) to nomi
 * React
 * HTML
 * CSS
+
+## Try it yourself! 
+
+[The Shoppies](https://danlehner.github.io/the-shoppies/)
