@@ -29,7 +29,7 @@ const Nominations = (props) => {
   }
 
   return (
-    <div className="container">
+    <div className="container box">
       <h2>Nominations <span>(up to five)</span></h2>
       {noms.length 
       ? 

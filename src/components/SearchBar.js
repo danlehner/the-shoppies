@@ -10,7 +10,7 @@ const SearchBar = (props) => {
   }
 
   return (
-    <div className="search">
+    <div className="search box">
         <h1>The Shoppies</h1>
         <p>Search for your favorite movie. </p>
         <input onChange={handleEnter} type="text" placeholder="Enter title or keyword"></input>

@@ -43,7 +43,7 @@ const SearchResults = (props) => {
   }
 
   return (
-    <div className="container">
+    <div className="container box">
       <h2>Search Results</h2>
       {results.length ? 
          printResults(results)
