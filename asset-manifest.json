@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/the-shoppies/static/css/main.3e044474.chunk.css",
+    "main.css": "/the-shoppies/static/css/main.c8ad6bd6.chunk.css",
     "main.js": "/the-shoppies/static/js/main.4434bb24.chunk.js",
     "main.js.map": "/the-shoppies/static/js/main.4434bb24.chunk.js.map",
     "runtime-main.js": "/the-shoppies/static/js/runtime-main.f6a99682.js",
@@ -10,14 +10,14 @@
     "static/js/3.712bb724.chunk.js": "/the-shoppies/static/js/3.712bb724.chunk.js",
     "static/js/3.712bb724.chunk.js.map": "/the-shoppies/static/js/3.712bb724.chunk.js.map",
     "index.html": "/the-shoppies/index.html",
-    "static/css/main.3e044474.chunk.css.map": "/the-shoppies/static/css/main.3e044474.chunk.css.map",
+    "static/css/main.c8ad6bd6.chunk.css.map": "/the-shoppies/static/css/main.c8ad6bd6.chunk.css.map",
     "static/js/2.3d094653.chunk.js.LICENSE.txt": "/the-shoppies/static/js/2.3d094653.chunk.js.LICENSE.txt",
     "static/media/App.css": "/the-shoppies/static/media/hollywood.d21b8cd3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f6a99682.js",
     "static/js/2.3d094653.chunk.js",
-    "static/css/main.3e044474.chunk.css",
+    "static/css/main.c8ad6bd6.chunk.css",
     "static/js/main.4434bb24.chunk.js"
   ]
 }
