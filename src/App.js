@@ -1,8 +1,6 @@
 import './App.css';
 import React, { useState } from "react"; 
 
-// import { CSSTransition } from 'react-transition-group'; 
-
 import SearchBar from "./components/SearchBar"; 
 import Nominations from "./components/Nominations"; 
 import SearchResults from "./components/SearchResults"; 
@@ -40,7 +38,7 @@ const App = () => {
 
       {banner && 
         <div class="warning-banner">
-        <p>{banner ? "You've already got five nominees!" : ""}</p>
+        <p>{banner ? "You already have five nominees!" : ""}</p>
       </div>
       }
         <SearchBar loadResults={loadResults} />
