@@ -4,4 +4,12 @@ Here's a simple UI that utilizes the [OMDB API](http://www.omdbapi.com/) to nomi
 
 ## How to use it 
 
-* List item
+* Type your favorite film into the search bar
+* Select up to five nominees from the generated list 
+* View and edit your nominees in the box to the right
+
+## Technologies used
+
+* React
+* HTML
+* CSS
